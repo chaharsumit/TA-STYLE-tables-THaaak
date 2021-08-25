@@ -1,0 +1,412 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/* custom css*/
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-md{
+  font-size: 32px;
+}
+
+.text-sm{
+  font-size: 14px;
+}
+
+.text-lsm{
+  font-size: 20px;
+}
+
+.text-lg{
+  font-size: 52px;
+}
+
+.text-xlg{
+  font-size: 82px;
+}
+
+.btn{
+  background-color: #ED563A;
+  border: none;
+  padding: 14px 16px;
+}
+
+.btn:hover{
+  background-color: rgb(255, 87, 57);
+  cursor: pointer;
+}
+
+.danger{
+  color: #ED563A;
+}
+
+.section{
+  padding: 150px 0;
+}
+
+.center{
+  text-align: center;
+}
+
+.line{
+  display: block;
+  margin: 0 auto;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-24{
+  margin-bottom: 24px;
+}
+
+.text-light{
+  color: #858585;
+}
+
+.heading-text{
+  padding: 0 320px;
+}
+
+.heading{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.col-1-2{
+  flex: 0 1 48%;
+}
+
+.col-20{
+  flex: 0 1 20%;
+}
+
+.col-75{
+  flex: 0 1 75%;
+}
+
+/* header styles */
+
+.header{
+  padding: 24px 0;
+  background-color: rgba(102, 110, 117, 0.534);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container{
+  align-items: center;
+}
+
+.header, .nav-link, .btn{
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navbar{
+  margin-left: auto;
+}
+
+.brand-name{
+  font-weight: 900;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  margin-left: 42px;
+}
+
+.nav-link:hover{
+  color: #ED563A;
+}
+
+/* hero */
+
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  background: rgba(43, 57, 78, 0.719);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.hero h1 span{
+  color: #ED563A;
+}
+
+/* program styles */
+
+.course-card, .course-container{
+  justify-content: space-between;
+}
+
+.course-container{
+  padding: 100px 0 0 0;
+}
+
+.course-card{
+  margin-bottom: 64px;
+}
+
+.card-heading,.course-link{
+  text-transform: uppercase;
+}
+
+.course-link:hover{
+  color: rgb(240, 56, 24);
+  font-weight: 600;
+}
+
+/* tagline */
+.tagline-section{
+  background-image: url(../media/cta-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+.tagline-section p{
+  padding: 0 120px;
+}
+
+/* classes styles */
+.col-30{
+  flex: 0 1 30%;
+}
+.col-32{
+  flex: 0 1 32%;
+}
+.col-65{
+  flex: 0 1 65%;
+}
+.col-48{
+  flex: 0 1 48%;
+}
+.col-100{
+  flex: 0 1 100%;
+}
+.training-image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.class-info-container{
+  justify-content: space-between;
+  padding: 82px 0 0 0;
+}
+
+.class-card{
+  align-items: center;
+  padding: 32px 32px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.class-card p{
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-left: 24px;
+}
+
+.btn-card{
+  padding: 24px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 700;
+  width: 100%;
+}
+
+.class-description h3{
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: 24px;
+}
+
+/* Schedule section styles */
+.schedule-section{
+  color: #ffffff;
+  background-image: url(../media/schedule-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.schedule-section .heading-text{
+  padding: 0 320px;
+}
+
+caption{
+  word-spacing: 12px;
+  text-transform: capitalize;
+  margin-bottom: 42px;
+}
+
+table{
+  margin: 82px auto 0 auto;
+  border: 1px solid;
+  border-spacing: collapse;
+}
+
+td{
+  text-align: center;
+  padding: 42px 62px;
+  border: 1px solid;
+  text-transform: capitalize;
+}
+
+/* trainer cards styles */
+
+.trainer-card-container{
+  margin-top: 82px;
+  justify-content: space-between;
+}
+.trainer-card{
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 42px 42px;
+}
+.trainer-card img{
+  width: 100%;
+}
+.trainer-social-menu a{
+  margin-right: 18px;
+  color: #000000;
+}
+.trainer-social-menu a:hover{
+  color: #ED563A;
+}
+.trainer-info{
+  margin-top: 16px;
+  font-weight: 500;
+}
+.trainer-name{
+  margin: 5px 0 16px 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.trainer-description{
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+/* contact styles */
+
+.contact-form-container{
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../media/contact-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 56px;
+}
+.contact-container{
+  height: 100%;
+}
+.form{
+  width: 90%;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+figure{
+  width: 50%;
+}
+fieldset{
+  justify-content: space-between;
+}
+.form-control{
+  border: 1px solid #e0dbdb;
+  outline: none;
+  padding: 12px 18px;
+  margin-bottom: 24px;
+}
+/* footer */
+.footer{
+  text-align: center;
+  padding: 32px 0;
+}
+
